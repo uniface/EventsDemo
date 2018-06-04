@@ -1,0 +1,12 @@
+[LOGICALS]
+Username  = <Your Username>
+Password  = <Your Password>
+OutgoingEmail = <Outgoing email address>
+IncomingServer = <Incoming server>
+Incomingport = <Incoming port>
+Outgoingserver =  <Outoging email server>
+Outgoingport   =   <Outgoing port>
+Outgoingserverauthentication = Yes
+
+[USER_3GL]
+C:\Program Files (x86)\Uniface\Uniface 9.7.03\common\bin\uauthlogin(UAuthLoginSMTP)

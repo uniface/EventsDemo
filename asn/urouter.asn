@@ -1,0 +1,3 @@
+[SERVERS]
+speaker = "C:\Program Files (x86)\Uniface\Uniface 9.7.03\common\bin\userver.exe" /dir="c:\projects\UEvents\" /adm="c:\projects\UEvents\adm\" /asn=.\asn\wasv.asn
+speaker_debug = "C:\Program Files (x86)\Uniface\Uniface 9.7.03\common\bin\userver.exe" /dir="c:\projects\UEvents\" /adm="c:\projects\UEvents\adm\" /asn=.\asn\wasv.asn /max=1 /deb=localhost+13002:create
