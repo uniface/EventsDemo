@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta name="Default" content="Uniface 9">
+  <link rel="stylesheet" type="text/css" href="../css/udsp.css">
+   <title>title</title></head>
+<body><div class="container">
+<br><br>
+<div class="red-text">You have been logged out.</div>
+</div>
+ </body></html>

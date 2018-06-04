@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>What's Nearby</title>
+
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+</head>
+<body>
+<div id="map" style="width: 95%; height: 45em; position: absolute;">
+	<div id="map-canvas">
+		My Map
+	</div>
+</div>
+
+</body></html>

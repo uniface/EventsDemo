@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="Default" content="Uniface 9">
+<!-- Tell the browser to be responsive to screen width -->
+  <meta
+ content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+ name="viewport">
+<!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet"
+ href="../bootstrap/css/bootstrap.min.css">
+<!-- Font Awesome -->
+  <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- Ionicons -->
+  <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+<!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet"
+ href="../dist/css/skins/_all-skins.min.css">
+  <title></title>
+</head>
+<body>
+<h1><label id="ufld:NAME.EVENT.EVENTS">Label</label></h1>
+<!-- Main content -->
+<div class="row" id="uocc:SPEAKER.EVENTS">
+<div class="col-md-4"><!-- Widget: user widget style 1 -->
+<div class="box box-widget widget-user"><!-- Add the bg color to the header using any of the bg-* classes -->
+<div class="widget-user-header bg-red-active">
+<h3 class="widget-user-username"><label
+ id="ufld:FULLNAME.SPEAKER.EVENTS" value="Input Element"></label></h3>
+<h5 class="widget-user-desc">
+<label id="ufld:DISPLAYTYPE.SPEAKER.EVENTS">Label</label></h5>
+</div>
+<div class="widget-user-image">
+<img id="ufld:SPEAKERPHOTO.PHOTOS.EVENTS" alt=""
+ height="200" width="200"></div>
+<div class="box-footer">
+<div class="row">
+<div class="col-sm-4 border-right">
+<div class="description-block">
+<h5 class="description-header"><input
+ id="ufld:CONTACTTYPE.CONTACTS.EVENTS" value="Input Element"></h5>
+<span class="description-text"><input
+ id="ufld:CONTACTFIELD.CONTACTS.EVENTS" value="Input Element"></span>
+</div>
+</div>
+<!-- /.description-block -->
+<!-- /.description-block --><!-- /.col --><!-- /.col --></div>
+<!-- /.row -->
+</div>
+</div>
+<div class="box-body"> <span
+ id="ufld:BIOGRAPHYTEXT.BIOGRAPHY.EVENTS">Static Text</span>
+</div>
+<!-- /.widget-user -->
+<div class="col-xs-12">
+<div class="box">
+<div class="box-header">
+<h3 class="box-title">Sessions to be Presented</h3>
+</div>
+<!-- /.box-header -->
+<div class="box-body table-responsive no-padding">
+<table id="uent:SESSIONS.EVENTS" class="table table-hover">
+  <thead>
+  <tr>
+    <td>Name</td>
+    <td>Description</td>
+  </tr>
+  </thead>
+  <tbody>
+    <tr id="uocc:SESSIONS.EVENTS">
+      <td><span id="ufld:SESSION_NAME.SESSIONS.EVENTS"></span>
+      </td>
+      <td><span id="ufld:SESSIONDESCRIPTION.SESSIONS.EVENTS"></span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

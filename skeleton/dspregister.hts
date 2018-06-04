@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Uniface Events | Registration Page</title>
+
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<link rel="stylesheet" href="/Events/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="/Events/dist/css/AdminLTE.min.css">
+<link rel="stylesheet" href="/Events/plugins/iCheck/square/blue.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" 	rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/Events/css/eventsdemo.css">
+
+</head>
+
+<body class="hold-transition register-page"	style="background-color: #ffffff;">
+	<br>
+	<div class="register-box">
+		<div class="register-logo"></div>
+		<div class="register-box-body">
+			<form action="DSPREGISTER" method="post">
+				<div class="form-group has-feedback">
+					<input class="form-control" placeholder="Full name"
+						id="ufld:FULLNAME.DUMMY.EVENTS" type="text"><span
+						class="glyphicon glyphicon-user form-control-feedback"></span>
+				</div>
+				<div class="form-group has-feedback">
+					<input class="form-control" placeholder="Email"
+						id="ufld:EMAIL_ADDRESS.DUMMY.EVENTS" type="email"><span
+						class="glyphicon glyphicon-envelope form-control-feedback"></span>
+				</div>
+				<div class="form-group has-feedback">
+					<input class="form-control" placeholder="Password"
+						id="ufld:PASSWORD.DUMMY.EVENTS" type="password"><span
+						class="glyphicon glyphicon-lock form-control-feedback"></span>
+						<span class="help-block with-errors" id="uflderror:PASSWORD.DUMMY.EVENTS"></span>
+				</div>
+				<div class="form-group has-feedback">
+					<input class="form-control" placeholder="Retype password"
+						id="ufld:RETYPEPASSWORD.DUMMY.EVENTS" type="password"><span
+						class="glyphicon glyphicon-log-in form-control-feedback"></span>
+						<span class="help-block with-errors" id="uflderror:RETYPEPASSWORD.DUMMY.EVENTS"></span>
+				</div>
+				<div class="row">
+				
+					<div class="col-xs-6">
+							<span type="submit" id="ufld:REGISTER.DUMMY.EVENTS" class="btn btn-default btn-block btn-flat center">Register</span>
+					</div>
+					<div class="row">
+					<div class="col-xs-2">
+						<input id="ufld:AGREETOTERMS.DUMMY.EVENTS" value="Input Element">
+					</div>
+					<div class="col-xs-4 check-label white-text row">I agree to the <a href="/Events/terms.html" class="link-class">terms</a>
+					</div>
+					<!-- /.col -->
+
+					<!-- /.col -->
+				</div>
+				<div style="height:1em"></div>
+				<div class="row center">
+					<div class="col-xs-1">
+						<input id="ufld:COMMS_OPT_OUT.AUTHORIZEDUSERS.EVENTS" value="Input Element"/>
+					</div>
+					<div class="col-xs-10 check-label white-text">Opt out of receiving Information from Uniface</div>
+				</div>
+			</form>
+		</div>
+			</div>
+		<div class="social-auth-links text-center">
+			<img src="/Events/images/divider.png" alt=""  width='25%' class="white-text">or sign up with <img
+				src="/Events/images/divider.png" alt=""  width='25%'> <br> <a href="#"
+				class="btn  btn-social btn-facebook btn-flat"><i
+				class="fa fa-facebook"></i>Facebook</a> <a href="#"
+				class="btn btn-social btn-google btn-flat"><i
+				class="fa fa-google-plus"></i>Google+</a>
+				
+						<br> <img src="/Events/images/LoginSeparator.png" height="35px" width="100%" style="margin-top:1em"> 
+	<div><a href="DSPMAIN" class="col-xs-8 col-xs-offset-2">I already have an account</a></div>
+		</div>
+
+	</div>
+
+	<!-- /.form-box -->
+
+</div>
+	<!-- /.register-box -->
+	<!-- jQuery 2.2.3 -->
+	<script src="/Events/plugins/jQuery/jquery-2.2.3.min.js"></script>
+	<!-- Bootstrap 3.3.6 -->
+	<script src="/Events/bootstrap/js/bootstrap.min.js"></script>
+	<!-- iCheck -->
+	<script src="/Events/plugins/iCheck/icheck.min.js"></script>
+
+
+
+	<script>
+		jQuery(function() {
+			$("#submit")
+					.click(
+							function() {
+								$(".error").hide();
+								var hasError = false;
+								var passwordVal = $("#PASSWORD.DUMMY.EVENTS")
+										.val();
+								var checkVal = $("#RETYPEPASSWORD.DUMMY.EVENTS")
+										.val();
+								if (passwordVal == '') {
+									$("#PASSWORD.DUMMY.EVENTS")
+											.after(
+													'<span class="error">Please enter a password.</span>');
+									hasError = true;
+								} else if (checkVal == '') {
+									$("#RETYPEPASSWORD.DUMMY.EVENTS")
+											.after(
+													'<span class="error">Please re-enter your password.</span>');
+									hasError = true;
+								} else if (passwordVal != checkVal) {
+									$("#RETYPEPASSWORD.DUMMY.EVENTS")
+											.after(
+													'<span class="error">Passwords do not match.</span>');
+									hasError = true;
+								}
+								if (hasError == true) {
+									return false;
+								}
+							});
+		});
+		$(function() {
+			$('input').iCheck({
+				checkboxClass : 'icheckbox_square-blue',
+				radioClass : 'iradio_square-blue',
+				increaseArea : '20%' // optional
+			});
+		});
+	</script>
+</body>
+</html>

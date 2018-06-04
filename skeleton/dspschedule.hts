@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"-->
+</head>
+<body>
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="span4"></div>
+			<div class="span4">
+				<!--img class="img-responsive center-block" src="/Events/images/eventsheader.png" height="60%" width="60%" /-->
+			</div>
+			<div class="span4"></div>
+		</div>
+		<div class="row" style="background-color: rgb(238, 60, 66);">
+			<div class="UpperTitle">
+				<img src='/Events/images/schedule-sm.png'/>S C H E D U L E
+			</div>
+		</div>
+ 
+		<div class="row vertical-align display-table center">
+			<span id="ufld:PREVMONTH.CALNAV.EVENTS" ><img src="/Events/images/leftarrow.png"/></span>
+			<span id="ufld:MONTHLYVIEW.CALNAV.EVENTS"><img src="/Events/images/MonthScheduleRed32.png"/></span> 
+			<span id="ufld:WEEKLYVIEW.CALNAV.EVENTS"><img src="/Events/images/WeekScheduleRed32.png"/></span> 
+			<span id="ufld:LISTVIEW.CALNAV.EVENTS"><img src="/Events/images/DayScheduleRed32.png"/></span>
+			<img id="ufld:PRINTME.CALNAV.EVENTS" width="32px" height="32px"/>
+			<span id="ufld:NEXTMONTH.CALNAV.EVENTS"><img src="/Events/images/rightarrow.png"/></span>
+		</div>
+	</div>
+
+	<div id="calendar"></div>
+	<br>
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header"
+					style="background-image: url('/Events/images/redbox.png')">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title" style="color: white">Session Details</h4>
+				</div>
+				<div class="modal-body">
+					<p>Some text in the modal.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
